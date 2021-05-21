@@ -2,7 +2,7 @@
 Ph.D. Chapter III - Efforts towards developing a free-acting Lipoyl Synthase
 For easy over-view, the files and scripts will be described here in the order in which they appear as figures in the Chapter
 
-## Figure 4: Heatmap of the lipoic acid biosynthetic genes present in bacterial genomes.
+## Figure 4: Heatmap of the lipoic acid biosynthetic genes present in bacterial genomes
 This data originates from Microbesonline (Dehal, P. S., Joachimiak, M. P., Price, M. N., Bates, J. T., Baumohl, J. K., Chivian, D., … Arkin, A. P. (2010). MicrobesOnline: an integrated portal for comparative and functional genomics. Nucleic Acids Research, 38(Database), D396–D400. https://doi.org/10.1093/nar/gkp919)
 
 ### LipA_B_lplA_LipM_LipL_gcvH orthologs.xlsx
@@ -28,9 +28,8 @@ Output from ConSurf, giving a conservation score and confidence interval of each
 Output from ConSurf, giving a conservation score and confidence interval of each residue (rooted in the mtLipA residues), only complementing LipAs
 ### Conservation_CompvsNoncomp_mtLipA.csv
 Final Data-file indicating the differences in conservations of LipA residues, used for plots in Figure 8.
-
 ### mtLipA5EXK_functionalMoreConsResidues_highlighted.pse
-PyMOL session file showing the structure and highlighted residues used for figure S2
+PyMOL session file showing the structure of mtLipA and highlighted residues used for figure S2
 
 ## Figure 9: epPCR mutability of ecLipA study
 A deep-sequence analysis of missense mutations of ecLipA allowed for in vivo functionality. Data originates from NGS data supplied by Eurofins Genomics as describes in the Methods
@@ -40,8 +39,16 @@ R-script for the handling, cleaning and analysis of the epPCR data
 Output of the CLC genomics Workbench basic variant analysis tool for the selected epPCR LipA library
 ### Unselected epPCR ecoLipA deep sequencing.csv
 Output of the CLC genomics Workbench basic variant analysis tool for the un-selected epPCR LipA library
+### epPCRcol_ecLIPA.pse
+PyMOL session file showing the structure of ecLipA and highlighted significant epPCR residues used for figure 9
 
 ## Figure 10: Combining conservation and epPCR model scores
 Generating a logistical regression scoring function for predicting the chance of a heterologous LipA complementing 
-
-#
+### Combined_model_rawdatav2.csv
+The data from conservation (figure 8) and epPCR (figure 9) analysis, the raw data used for generating the models
+### LipA_comp_Model_development.R
+Script for developing the predictive models based of the rawdata above
+### Scoring_functions.R
+Script for using the scoring functions developed on alignments, to get the predictive score 
+### Pair-wise alignments to ecLipA.rar
+Archive of pairwise alignment of LipAs to _E. coli_ LipA, the input for the score functions
