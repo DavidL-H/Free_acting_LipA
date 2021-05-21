@@ -11,3 +11,8 @@ Main data file, containing the exported orthologs and homologs of lipoic acid bi
 Metadata file, giving information on each of the genomes in LipA_B_lplA_LipM_LipL_gcvH orthologs.xlsx, including the phylum.
 ### Heatmap of lipoic acid biosynthetic genes.R
 R script for handling, cleaning and visualizing the data, resulting in Figure 4 heatmap
+
+## Figure 5: Unrooted guide tree with neighborhood-joining, based on multiple sequence alignment of the Pfam BPL_LplA_LipB (PF03099) family
+This is a simple MSA tree, generated as describes in the Metods. The files used for generating it are as follows:
+### uniprot_pf03099_reviewd_bacteria.fa
+Fasta file containing the sequences used for the guide-tree.
