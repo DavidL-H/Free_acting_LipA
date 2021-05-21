@@ -52,3 +52,18 @@ Script for developing the predictive models based of the rawdata above
 Script for using the scoring functions developed on alignments, to get the predictive score 
 ### Pair-wise alignments to ecLipA.rar
 Archive of pairwise alignment of LipAs to _E. coli_ LipA, the input for the score functions
+
+## Table S4: Uniprot LipA sequences without a conserved Arginine residue, known to be essential for LipA catalysis
+### LipA_arg_motif_scan.R
+R-script for handling data
+### uniprot-lipoyl+synthase.fasta
+Fasta file of all annotated LipA sequences available in Uniprot, used for analysis
+### V4 LipA Arginine motif.rar
+Archive of three .csv files containing the output from ProSiteScan, scanning the custom motif: C-x(3)-C-x(2)-C-x(175,225)-[PAVT]-[LMFVYI]-[VATIMQD]-R-[STYFP]-[ESVP]-[HYSFPTEA]
+against the custom database of uniprot-lipoyl+synthase.fasta
+
+### Not_covered_byV4motif.fa
+Fasta file of the sequences in the custom database, not covered by the motif above.
+### FINAL_bac_nomotif_nofrag_RSmotif.xlsx
+Not_covered_byV4motif.fa was scanned with the C-x(3)-C-x(2)-C motif using ProSiteScan, giving a list of sequences without the V4 LipA arginine motif BUT with the Radical SAM motif. These sequences are LipAs (or at least missoannotated Radical SAM enzymes) without the conserved arginine. These are the sequences list in Table S4
+
