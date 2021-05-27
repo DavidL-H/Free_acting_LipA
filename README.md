@@ -52,6 +52,8 @@ Script for developing the predictive models based of the rawdata above
 Script for using the scoring functions developed on alignments, to get the predictive score 
 ### Pair-wise alignments to ecLipA.rar
 Archive of pairwise alignment of LipAs to _E. coli_ LipA, the input for the score functions
+### Final_model_v2
+A .csv file showing all the values at each residue in all the alignments tested, used for the scoring functions.
 
 ## Table S4: Uniprot LipA sequences without a conserved Arginine residue, known to be essential for LipA catalysis
 ### LipA_arg_motif_scan.R
